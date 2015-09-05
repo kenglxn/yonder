@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-git checkout gh-pages
+git checkout -B gh-pages
 git merge master -m "merge master and prepare to deploy"
 ember build --environment production
 git add dist --force
